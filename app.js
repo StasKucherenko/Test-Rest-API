@@ -25,7 +25,7 @@ db.connect( (err) => {
     }
     else{
       console.log('Server MySQL connect...');
-    }
+    };
  });
 
 
@@ -46,7 +46,7 @@ app.get('/list/login', urlencodedParser, (req, res) => {
             message: 'User lists retrieved successfully'
         });
     });
-}) 
+}); 
 
     
 app.post('/api/login', urlencodedParser, (req, res) => {
@@ -70,7 +70,7 @@ app.post('/api/login', urlencodedParser, (req, res) => {
                 token: token
             });
         });
-    }
+    };
 });
 
 
@@ -115,7 +115,7 @@ app.get('/list/register', urlencodedParser, (req, res) => {
             message: 'User lists retrieved successfully'
         });
     });
-}) 
+}); 
 
 
 
@@ -126,4 +126,4 @@ app.get('/list/register', urlencodedParser, (req, res) => {
 
 app.listen(3000, () => {
     console.log('Server has been started...')
-})
+});
